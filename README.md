@@ -1,84 +1,104 @@
-## nlp-tutorial
-
-<p align="center"><img width="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/TensorFlowLogo.svg/225px-TensorFlowLogo.svg.png" />  <img width="100" src="https://media-thumbs.golden.com/OLqzmrmwAzY1P7Sl29k2T9WjJdM=/200x200/smart/golden-storage-production.s3.amazonaws.com/topic_images/e08914afa10a4179893eeb07cb5e4713.png" /></p>
-
-`nlp-tutorial` is a tutorial for who is studying NLP(Natural Language Processing) using **Pytorch**. Most of the models in NLP were implemented with less than **100 lines** of code.(except comments or blank lines)
-
-- [08-14-2020] Old TensorFlow v1 code is archived in [the archive folder](archive). For beginner readability, only pytorch version 1.0 or higher is supported.
-
-
-## Curriculum - (Example Purpose)
-
-#### 1. Basic Embedding Model
-
-- 1-1. [NNLM(Neural Network Language Model)](1-1.NNLM) - **Predict Next Word**
-  - Paper -  [A Neural Probabilistic Language Model(2003)](http://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf)
-  - Colab - [NNLM.ipynb](https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/1-1.NNLM/NNLM.ipynb)
-- 1-2. [Word2Vec(Skip-gram)](1-2.Word2Vec) - **Embedding Words and Show Graph**
-  - Paper - [Distributed Representations of Words and Phrases
-    and their Compositionality(2013)](https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)
-  - Colab - [Word2Vec.ipynb](https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/1-2.Word2Vec/Word2Vec_Skipgram(Softmax).ipynb)
-- 1-3. [FastText(Application Level)](1-3.FastText) - **Sentence Classification**
-  - Paper - [Bag of Tricks for Efficient Text Classification(2016)](https://arxiv.org/pdf/1607.01759.pdf)
-  - Colab - [FastText.ipynb](https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/1-3.FastText/FastText.ipynb)
-
-
-
-#### 2. CNN(Convolutional Neural Network)
-
-- 2-1. [TextCNN](2-1.TextCNN) - **Binary Sentiment Classification**
-  - Paper - [Convolutional Neural Networks for Sentence Classification(2014)](http://www.aclweb.org/anthology/D14-1181)
-  - [TextCNN.ipynb](https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/2-1.TextCNN/TextCNN.ipynb)
-
-
-
-#### 3. RNN(Recurrent Neural Network)
-
-- 3-1. [TextRNN](3-1.TextRNN) - **Predict Next Step**
-  - Paper - [Finding Structure in Time(1990)](http://psych.colorado.edu/~kimlab/Elman1990.pdf)
-  - Colab - [TextRNN.ipynb](https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/3-1.TextRNN/TextRNN.ipynb)
-- 3-2. [TextLSTM](https://github.com/graykode/nlp-tutorial/tree/master/3-2.TextLSTM) - **Autocomplete**
-  - Paper - [LONG SHORT-TERM MEMORY(1997)](https://www.bioinf.jku.at/publications/older/2604.pdf)
-  - Colab - [TextLSTM.ipynb](https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/3-2.TextLSTM/TextLSTM.ipynb)
-- 3-3. [Bi-LSTM](3-3.Bi-LSTM) - **Predict Next Word in Long Sentence**
-  - Colab - [Bi_LSTM.ipynb](https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/3-3.Bi-LSTM/Bi_LSTM.ipynb)
-
-
-
-#### 4. Attention Mechanism
-
-- 4-1. [Seq2Seq](4-1.Seq2Seq) - **Change Word**
-  - Paper - [Learning Phrase Representations using RNN Encoder–Decoder
-    for Statistical Machine Translation(2014)](https://arxiv.org/pdf/1406.1078.pdf)
-  - Colab - [Seq2Seq.ipynb](https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/4-1.Seq2Seq/Seq2Seq.ipynb)
-- 4-2. [Seq2Seq with Attention](4-2.Seq2Seq(Attention)) - **Translate**
-  - Paper - [Neural Machine Translation by Jointly Learning to Align and Translate(2014)](https://arxiv.org/abs/1409.0473)
-  - Colab - [Seq2Seq(Attention).ipynb](https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/4-2.Seq2Seq(Attention)/Seq2Seq(Attention).ipynb)
-- 4-3. [Bi-LSTM with Attention](4-3.Bi-LSTM(Attention)) - **Binary Sentiment Classification**
-  - Colab - [Bi_LSTM(Attention).ipynb](https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/4-3.Bi-LSTM(Attention)/Bi_LSTM(Attention).ipynb)
-
-
-
-#### 5. Model based on Transformer
-
-- 5-1.  [The Transformer](5-1.Transformer) - **Translate**
-  - Paper - [Attention Is All You Need(2017)](https://arxiv.org/abs/1706.03762)
-  - Colab - [Transformer.ipynb](https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/5-1.Transformer/Transformer.ipynb), [Transformer(Greedy_decoder).ipynb](https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/5-1.Transformer/Transformer(Greedy_decoder).ipynb)
-- 5-2. [BERT](5-2.BERT) - **Classification Next Sentence & Predict Masked Tokens**
-  - Paper - [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding(2018)](https://arxiv.org/abs/1810.04805)
-  - Colab - [BERT.ipynb](https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/5-2.BERT/BERT.ipynb)
-
-
-
-## Dependencies
-
-- Python 3.5+
-- Pytorch 1.0.0+
-
-
-
-## Author
-
-- Tae Hwan Jung(Jeff Jung) @graykode
-- Author Email : nlkey2022@gmail.com
-- Acknowledgements to [mojitok](http://mojitok.com/) as NLP Research Internship.
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">nlp 教程</font></font></h2><a id="user-content-nlp-tutorial" class="anchor" aria-label="永久链接：nlp-tutorial" href="#nlp-tutorial"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p align="center" dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/53eb88ac35dba5db476e7db24de008cdd38e75196bee1198fead412ccc873ae7/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f312f31312f54656e736f72466c6f774c6f676f2e7376672f32323570782d54656e736f72466c6f774c6f676f2e7376672e706e67"><img width="100" src="https://camo.githubusercontent.com/53eb88ac35dba5db476e7db24de008cdd38e75196bee1198fead412ccc873ae7/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f312f31312f54656e736f72466c6f774c6f676f2e7376672f32323570782d54656e736f72466c6f774c6f676f2e7376672e706e67" data-canonical-src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/TensorFlowLogo.svg/225px-TensorFlowLogo.svg.png" style="max-width: 100%;"></a>  <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/bb66061ff6478af3410044d04deeb93764e788f02b1c865c2707779444ae8894/68747470733a2f2f6d656469612d7468756d62732e676f6c64656e2e636f6d2f4f4c717a6d726d77417a59315037536c32396b325439576a4a644d3d2f323030783230302f736d6172742f676f6c64656e2d73746f726167652d70726f64756374696f6e2e73332e616d617a6f6e6177732e636f6d2f746f7069635f696d616765732f65303839313461666131306134313739383933656562303763623565343731332e706e67"><img width="100" src="https://camo.githubusercontent.com/bb66061ff6478af3410044d04deeb93764e788f02b1c865c2707779444ae8894/68747470733a2f2f6d656469612d7468756d62732e676f6c64656e2e636f6d2f4f4c717a6d726d77417a59315037536c32396b325439576a4a644d3d2f323030783230302f736d6172742f676f6c64656e2d73746f726167652d70726f64756374696f6e2e73332e616d617a6f6e6177732e636f6d2f746f7069635f696d616765732f65303839313461666131306134313739383933656562303763623565343731332e706e67" data-canonical-src="https://media-thumbs.golden.com/OLqzmrmwAzY1P7Sl29k2T9WjJdM=/200x200/smart/golden-storage-production.s3.amazonaws.com/topic_images/e08914afa10a4179893eeb07cb5e4713.png" style="max-width: 100%;"></a></p>
+<p dir="auto"><code>nlp-tutorial</code><font style="vertical-align: inherit;"></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是针对使用Pytorch</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">学习 NLP（自然语言处理）的人的教程</font><font style="vertical-align: inherit;">。NLP 中的大多数模型都是用不到</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">100 行</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">代码实现的。（注释或空行除外）</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[2020-08-14] 旧版 TensorFlow v1 代码存档在</font></font><a href="/graykode/nlp-tutorial/blob/master/archive"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">存档文件夹</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中。为了方便初学者阅读，仅支持 pytorch 1.0 或更高版本。</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">课程 -（目的示例）</font></font></h2><a id="user-content-curriculum---example-purpose" class="anchor" aria-label="永久链接：课程 - （示例目的）" href="#curriculum---example-purpose"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1. 基本嵌入模型</font></font></h4><a id="user-content-1-basic-embedding-model" class="anchor" aria-label="永久链接：1. 基本嵌入模型" href="#1-basic-embedding-model"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1-1. </font></font><a href="/graykode/nlp-tutorial/blob/master/1-1.NNLM"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">NNLM(神经网络语言模型)</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> -</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">预测下一个单词</font></font></strong>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">论文 -  </font></font><a href="http://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">神经概率语言模型（2003）</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Colab- </font></font><a href="https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/1-1.NNLM/NNLM.ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">NNLM.ipynb</font></font></a></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1-2. </font></font><a href="/graykode/nlp-tutorial/blob/master/1-2.Word2Vec"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Word2Vec(Skip-gram)</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> -</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">词向量化并展示图</font></font></strong>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">论文 -</font></font><a href="https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单词和短语的分布式表示及其组合性（2013）</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Colab- </font></font><a href="https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/1-2.Word2Vec/Word2Vec_Skipgram(Softmax).ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Word2Vec.ipynb</font></font></a></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1-3. </font></font><a href="/graykode/nlp-tutorial/blob/master/1-3.FastText"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">FastText(应用层)</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> -</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">句子分类</font></font></strong>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">论文 -</font></font><a href="https://arxiv.org/pdf/1607.01759.pdf" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">高效文本分类的技巧包（2016）</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Colab- </font></font><a href="https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/1-3.FastText/FastText.ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">FastText.ipynb</font></font></a></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2.CNN（卷积神经网络）</font></font></h4><a id="user-content-2-cnnconvolutional-neural-network" class="anchor" aria-label="永久链接：2. CNN（卷积神经网络）" href="#2-cnnconvolutional-neural-network"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2-1. </font></font><a href="/graykode/nlp-tutorial/blob/master/2-1.TextCNN"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TextCNN</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> -</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">二元情感分类</font></font></strong>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">论文 -</font></font><a href="http://www.aclweb.org/anthology/D14-1181" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于句子分类的卷积神经网络（2014）</font></font></a></li>
+<li><a href="https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/2-1.TextCNN/TextCNN.ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文本CNN.ipynb</font></font></a></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3.RNN（循环神经网络）</font></font></h4><a id="user-content-3-rnnrecurrent-neural-network" class="anchor" aria-label="永久链接：3. RNN（循环神经网络）" href="#3-rnnrecurrent-neural-network"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3-1. </font></font><a href="/graykode/nlp-tutorial/blob/master/3-1.TextRNN"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TextRNN</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> -</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">预测下一步</font></font></strong>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">论文——</font></font><a href="http://psych.colorado.edu/~kimlab/Elman1990.pdf" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">寻找时间结构（1990）</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Colab- </font></font><a href="https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/3-1.TextRNN/TextRNN.ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TextRNN.ipynb</font></font></a></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3-2. </font></font><a href="https://github.com/graykode/nlp-tutorial/tree/master/3-2.TextLSTM"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TextLSTM</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> -</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">自动完成</font></font></strong>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">论文 -</font></font><a href="https://www.bioinf.jku.at/publications/older/2604.pdf" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">长期短期记忆（1997）</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Colab- </font></font><a href="https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/3-2.TextLSTM/TextLSTM.ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TextLSTM.ipynb</font></font></a></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3-3. </font></font><a href="/graykode/nlp-tutorial/blob/master/3-3.Bi-LSTM"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bi-LSTM</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> -</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">预测长句中的下一个单词</font></font></strong>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Colab- </font></font><a href="https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/3-3.Bi-LSTM/Bi_LSTM.ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bi_LSTM.ipynb</font></font></a></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4.注意力机制</font></font></h4><a id="user-content-4-attention-mechanism" class="anchor" aria-label="永久链接：4.注意力机制" href="#4-attention-mechanism"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4-1. </font></font><a href="/graykode/nlp-tutorial/blob/master/4-1.Seq2Seq"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Seq2Seq</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> -</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">改变单词</font></font></strong>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">论文 -</font></font><a href="https://arxiv.org/pdf/1406.1078.pdf" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 RNN 编码器-解码器学习短语表征以实现统计机器翻译 (2014)</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Colab- </font></font><a href="https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/4-1.Seq2Seq/Seq2Seq.ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Seq2Seq.ipynb</font></font></a></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4-2.</font></font><a href="/graykode/nlp-tutorial/blob/master/4-2.Seq2Seq(Attention)"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">带注意力机制的 Seq2Seq</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> -</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">翻译</font></font></strong>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">论文 -</font></font><a href="https://arxiv.org/abs/1409.0473" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过联合学习对齐和翻译实现神经机器翻译 (2014)</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Colab- </font></font><a href="https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/4-2.Seq2Seq(Attention)/Seq2Seq(Attention).ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Seq2Seq（Attention）.ipynb</font></font></a></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4-3.</font></font><a href="/graykode/nlp-tutorial/blob/master/4-3.Bi-LSTM(Attention)"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">带注意力机制的 Bi-LSTM</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> -</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">二元情感分类</font></font></strong>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Colab- </font></font><a href="https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/4-3.Bi-LSTM(Attention)/Bi_LSTM(Attention).ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bi_LSTM（注意）.ipynb</font></font></a></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5.基于Transformer的模型</font></font></h4><a id="user-content-5-model-based-on-transformer" class="anchor" aria-label="永久链接：5.基于Transformer的模型" href="#5-model-based-on-transformer"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5-1.   </font></font><a href="/graykode/nlp-tutorial/blob/master/5-1.Transformer"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Transformer</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> -</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">翻译</font></font></strong>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">论文 -</font></font><a href="https://arxiv.org/abs/1706.03762" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意力就是你所需要的一切（2017）</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Colab—— </font></font><a href="https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/5-1.Transformer/Transformer.ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Transformer.ipynb</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，</font></font><a href="https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/5-1.Transformer/Transformer(Greedy_decoder).ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Transformer（Greedy_decoder）.ipynb</font></font></a></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5-2. </font></font><a href="/graykode/nlp-tutorial/blob/master/5-2.BERT"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">BERT</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> -</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分类下一句并预测掩码标记</font></font></strong>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">论文 - </font></font><a href="https://arxiv.org/abs/1810.04805" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">BERT：用于语言理解的深度双向变压器的预训练（2018）</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Colab- </font></font><a href="https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/5-2.BERT/BERT.ipynb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">BERT.ipynb</font></font></a></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">依赖项</font></font></h2><a id="user-content-dependencies" class="anchor" aria-label="永久链接：依赖项" href="#dependencies"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Python 3.5+</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pytorch 1.0.0+</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">作者</font></font></h2><a id="user-content-author" class="anchor" aria-label="永久链接：作者" href="#author"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tae Hwan Jung (Jeff Jung) @graykode</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">作者邮箱：</font></font><a href="mailto:nlkey2022@gmail.com"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">nlkey2022@gmail.com</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">感谢</font></font><a href="http://mojitok.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">mojitok</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">担任 NLP 研究实习员。</font></font></li>
+</ul>
+</article></div>
